@@ -1,13 +1,20 @@
 {
-  "name": "vlado-coin",
-  "version": "1.0.0",
+  "name": "vlado-token",
+  "version": "1.0.1",
   "scripts": {
     "deploy-mainnet": "npx hardhat run scripts/deploy.ts --network mainnet",
     "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby",
-    "verify": "npx hardhat run scripts/verify.ts --network rinkeby"
+    "verify": "npx hardhat run scripts/verify.ts --network mainnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vssavosko/vlado-token.git"
   },
   "author": "vssavosko",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vssavosko/vlado-token.git/issues"
+  },
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0"
   },
