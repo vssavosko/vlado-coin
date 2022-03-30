@@ -1,14 +1,11 @@
-/* eslint-disable camelcase */
-/* eslint-disable node/no-missing-import */
-
 import { ethers } from "hardhat";
 
-import { VladoCoin__factory } from "typechain";
+// eslint-disable-next-line node/no-missing-import
+import { VladoCoin__factory } from "../typechain";
 
 const main = async () => {
   const [signer] = await ethers.getSigners();
 
-  // TODO: check how to deploy with VLA
   const vladoCoin = await new VladoCoin__factory(signer).deploy();
 
   await vladoCoin.deployed();
