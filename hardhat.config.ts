@@ -17,11 +17,11 @@ const config: HardhatUserConfig = {
   networks: {
     mainnet: {
       chainId: 1,
-      url: process.env.PROD_ALCHEMY_KEY,
+      url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.PROD_ALCHEMY_KEY}`,
       accounts,
     },
     rinkeby: {
-      url: process.env.DEV_ALCHEMY_KEY,
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.DEV_ALCHEMY_KEY}`,
       accounts,
     },
   },

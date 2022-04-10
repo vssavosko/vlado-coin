@@ -1,12 +1,12 @@
 {
   "name": "vlado-token",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
-    "start": "npx hardhat run scripts/deploy.ts",
-    "deploy-mainnet": "npx hardhat run scripts/deploy.ts --network mainnet",
-    "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby",
-    "verify-mainnet": "npx hardhat run scripts/verify.ts --network mainnet",
-    "verify-rinkeby": "npx hardhat run scripts/verify.ts --network rinkeby"
+    "deploy:localhost": "npx hardhat run scripts/deploy.ts",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.ts --network mainnet",
+    "deploy:rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby",
+    "verify:mainnet": "npx hardhat run scripts/verify.ts --network mainnet",
+    "verify:rinkeby": "npx hardhat run scripts/verify.ts --network rinkeby"
   },
   "repository": {
     "type": "git",
